@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
+  </head>
+  <body>
+    <a-scene stats anti-alias>
+      <a-box position="-1 0.5 -3" rotation="0 45 0" color="darkblue"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="darkblue"></a-sphere>
+      <a-assets>
+        <img id="sky" src="https://cdn.glitch.com/262a1870-f416-4790-ba2f-9c307a56ab4d%2F360_world.jpg?1527120553801">
+      </a-assets>
+      <a-sky src="#sky"></a-sky>
+      <a-entity laser-controls="hand: right"></a-entity>
+      <a-entity oculus-go-controls x-button-listener></a-entity>
+      <a-entity laser-controls="hand: left"></a-entity>
+    </a-scene>
+  </body>
+</html>

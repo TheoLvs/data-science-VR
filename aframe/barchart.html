@@ -1,16 +1,20 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
   </head>
   <body>
     <a-scene>
+      <a-assets>
+        <img id="sky" src="https://cdn.glitch.com/262a1870-f416-4790-ba2f-9c307a56ab4d%2F360_world.jpg?1527120553801">
+      </a-assets>
+      <a-sky src="#sky"></a-sky>
       <a-box class="clickable" log="YO" position="-2 1.5 -4" rotation="0 0 0" color="#4CC3D9" width="0.5" height="3" depth="0.5"></a-box>
       <a-box position="-1 1 -4" rotation="0 0 0" color="#4CC3D9" width="0.5" height="2" depth="0.5"></a-box>
       <a-box position="0 0.75 -4" rotation="0 0 0" color="#4CC3D9" width="0.5" height="1.5" depth="0.5"></a-box>
       <a-box position="1 0.5 -4" rotation="0 0 0" color="#4CC3D9" width="0.5" height="1" depth="0.5"></a-box>
       <a-box position="2 0.25 -4" rotation="0 0 0" color="#4CC3D9" width="0.5" height="0.5" depth="0.5"></a-box>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="5" height="0" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <!-- <a-sky color="#ECECEC"></a-sky> -->
     </a-scene>
   </body>
 </html>
