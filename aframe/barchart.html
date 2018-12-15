@@ -3,7 +3,7 @@
     <script src="https://rawgit.com/aframevr/aframe/master/dist/aframe-master.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene anti-alias>
       <a-assets>
         <img id="sky" src="https://cdn.glitch.com/262a1870-f416-4790-ba2f-9c307a56ab4d%2F360_world.jpg?1527120553801">
       </a-assets>
@@ -15,6 +15,15 @@
       <a-box position="2 0.25 -4" rotation="0 0 0" color="#4CC3D9" width="0.5" height="0.5" depth="0.5"></a-box>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="5" height="0" color="#7BC8A4"></a-plane>
       <!-- <a-sky color="#ECECEC"></a-sky> -->
+
+<!--       <a-entity laser-controls="hand: right"></a-entity>
+      <a-entity oculus-go-controls x-button-listener></a-entity>
+      <a-entity laser-controls="hand: left"></a-entity> -->
+
+      <a-entity movement-controls="fly: true" position="0 0 0">
+        <a-entity camera position="0 1.6 0"></a-entity>
+      </a-entity>
+
     </a-scene>
   </body>
 </html>

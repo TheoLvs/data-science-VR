@@ -2,6 +2,12 @@
 Data Science experiments in Virtual Reality
 
 
+
+### Dataviz
+- [Force directed graph with Aframe](https://github.com/vasturiano/aframe-forcegraph-component)
+- [Scatter plot with Aframe](https://bryik.github.io/aframe-scatter-component/)
+
+
 ### Images
 
 #### Background 3D images
